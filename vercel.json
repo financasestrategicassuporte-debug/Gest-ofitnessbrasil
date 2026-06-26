@@ -1,4 +1,9 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/workshop0906", "dest": "/workshop0906.html" },
+    { "src": "/", "dest": "/index.html" }
+  ]
 }
